@@ -18,10 +18,9 @@
     </div>
 
 
-    <input type="text" name="" value="" placeholder="Username">
+    <input required type="text" [(ngModel)]="username" placeholder="Username" name="username">
     <br>
-
-    <input type="text" style="margin-bottom: 25px" name="" value="" placeholder="Password">
+    <input  required type="text" style="margin-bottom: 25px" [(ngModel)]="password" placeholder="Password" name = "username">
     <br>
     <button type="button" name="login">Login</button>
 
@@ -32,7 +31,7 @@
 <div class="footerdiv">
 
 <footer>
-<p>Hugo Kolander</p>
+<p>Hugo Kolander {{username}}   {{password}}</p>
 <p>Faculté des Sciences, de la Technologie et de la Communication</p>
 </footer>
 </div>
